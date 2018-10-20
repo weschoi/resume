@@ -1,24 +1,16 @@
 {
-  "name": "resume",
+  "name": "calculator",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "webpack -p",
     "build": "webpack -d --watch",
     "start": "nodemon server/index.js",
     "sass": "sass --watch dist/css"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/weschoi/resume.git"
-  },
   "author": "Wesley Choi",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/weschoi/resume/issues"
-  },
-  "homepage": "https://github.com/weschoi/resume#readme",
   "devDependencies": {},
   "dependencies": {
     "babel-core": "^6.26.3",

@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import { Mobile, Desktop, Physical } from './components';
+import { Mobile, Desktop, Physical } from './components';
 
-// ReactDOM.render(
-//   <div className="row no-gutters">
-//     <h1>Hello World</h1>
-//   </div>, 
-//   document.getElementById('app'));
-
-ReactDOM.render(<h1>Hello World</h1>, document.getElementById('app'));
-  
+ReactDOM.render(
+  <div className="row no-gutters">
+    <Mobile />
+    <Desktop />
+    <Physical />
+  </div>, 
+  document.getElementById('app'));

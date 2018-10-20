@@ -1,0 +1,304 @@
+$iphone-bg: #dcdfe6;
+$iphone-features: #a1a5b3;
+
+$left-bg: #e3e3e5;
+$left-bg-2: #31b69f;
+$left-button: #242b3f;
+$sand: #c7aa84;
+$dark-blue: #17122c;
+
+$gradient-1: #b156f2;
+$gradient-2: #795ae1;
+
+@mixin display($direction, $x, $y) {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $x;
+  align-items: $y;
+}
+
+@mixin width_height($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin gradient($degree, $gradient-1, $gradient-2) {
+  background: -webkit-linear-gradient($gradient-1, $gradient-2); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient($gradient-1, $gradient-2); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient($gradient-1, $gradient-2); /* For Firefox 3.6 to 15 */
+  background: linear-gradient($degree, $gradient-1, $gradient-2); /* Standard syntax */
+}
+
+@mixin unselectable() {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/* mobile!
+/* -------------------------------------------------------------------------- */
+
+.mobile {
+  background-image: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
+  padding: 0px;
+  @include display (row, center, center);
+  @include unselectable();
+
+  > div {
+    @include width_height(230px, 470px);
+    @include display(column, center, center);
+    @include border-radius(26px);
+    display: flex;
+    border: 3px solid white;
+    background: $iphone-bg;
+    box-shadow: 5px 5px 15px 0px #2cacd1*0.7;
+
+    .iphone-section-1 {
+      @include width_height(205px, 80px);
+      @include display(row, center, center);
+
+      > div {
+        background: $iphone-features;
+      }
+
+      .long-rectangle {
+        @include width_height(50px, 6px);
+        margin: 0 5px;
+        margin-left: 23px;
+        @include border-radius(7px);
+      }
+
+      .short-rectangle {
+        @include width_height(6px, 6px);
+        margin: 0 5px;
+        @include border-radius(7px);
+      }
+    }
+
+    .iphone-section-3 {
+      @include width_height(205px, 80px);
+      @include display(row, center, center);
+    }
+
+    .iphone-section-2 {
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 200;
+      @include width_height(205px, 370px);
+      text-align: center;
+
+      > div {
+        width: 100%;
+      }
+
+      .view {
+        background-color: $gradient-1;
+        @include gradient(down, $gradient-1, $gradient-2);
+        height: 34%;
+        display: flex;
+        flex-direction: column;
+
+        > div {
+          width: 100%;
+        }
+
+        .view-header {
+          height: 12%;
+          display: flex;
+          margin-top: 5px;
+
+          > div {
+            flex: 1;
+          }
+
+          .icon {
+            margin-top: -1px;
+          }
+
+          .signal {
+            display: flex;
+
+            .signal-circles-container {
+              @include width_height(45%, 100%);
+              display: flex;
+              flex-direction: row;
+              margin-left: 5px;
+              justify-content: space-around;
+
+              [class*="signal-circle-"] {
+                @include width_height(4px, 4px);
+                background: white;
+                border: 1px solid white;
+                @include border-radius(10px);
+              }
+
+              .signal-circle-2 {
+                background: none;
+              }
+            }
+
+            .wifi {
+              @extend .icon;
+              @include width_height(50%, 40%);
+              margin-left: 3px;
+              background: url('../img/wifi.png') no-repeat;
+              background-size: contain;
+            }
+          }
+
+          .time {
+            font-size: 7px;
+            font-weight: 300;
+            line-height: 5px;
+          }
+
+          .battery {
+            display: flex;
+            justify-content: flex-end;
+
+            .battery-percent {
+              @extend .time;
+            }
+
+            .bluetooth-icon {
+              @extend .icon;
+              @include width_height(11%, 44%);
+              background: url('../img/bluetooth.png') no-repeat;
+              background-size: contain;
+              margin-left: 3px;
+              opacity: 0.6;
+            }
+
+            .battery-icon {
+              @extend .icon;
+              @include width_height(20%, 44%);
+              background: url('../img/battery.png') no-repeat;
+              background-size: contain;
+              margin-right: 3px;
+            }
+          }
+        }
+
+        .result {
+          height: 60%;
+          line-height: 73px;
+          font-weight: 100;
+          font-size: 40px;
+        }
+
+        .view-footer {
+          height: 15%;
+
+          > div {
+            @include width_height(25%, 100%);
+          }
+
+          .previous-record {
+            float: right;
+            font-size: 10px;
+            line-height: 13px;
+            margin-right: 19px;
+            color: $gradient-1 * 1.5;
+            font-weight: 300;
+            text-align: right;
+          }
+        }
+      }
+
+      .history {
+        background-color: $dark-blue;
+        height: 8%;
+        display: flex;
+
+        .history-1 {
+          @include display(row, flex-start, center);
+          flex: 1;
+
+          span {
+            font-weight: 400;
+            font-size: 9px;
+            line-height: 0px;
+            color: white*0.35;
+            margin-left: 15px;
+            transition-timing-function: ease;
+            transition: color 0.6s;
+            cursor: pointer;
+          }
+
+          span:hover {
+            color: white*0.7;
+          }
+        }
+
+        .history-2 {
+          flex: 1;
+          text-align: right;
+          
+          #history-text {
+            font-size: 11px;
+            line-height: 29px;
+            margin-right: 20px;
+
+            #num {
+              color: white;
+            }
+
+            #operator {
+              color: $sand;
+            }
+          }
+        }
+      }
+
+      .button-group {
+        height: 58%;
+
+        > div {
+          display: flex;
+          height: 20%;
+
+          > div {
+            width: 25%;
+            background-color: $left-button;
+            line-height: 41px;
+            font-size: 11px;
+            transition-timing-function: ease;
+            transition: background-color 1s;
+            border: 1px solid $left-button*1.35;
+            position: relative;
+            cursor: pointer;
+          }
+
+          > div:hover {
+            background-color: $left-button*1.35;
+          }
+
+          .operator {
+            color: $sand;
+          }
+
+          .mobile-button-equal {
+            width: 50%;
+            background-color: $sand;
+          }
+
+          .mobile-button-equal:hover {
+            background-color: $sand*1.3;
+          }
+        }      
+      }
+    }
+  }
+}
