@@ -1,0 +1,35 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -d --watch",
+    "start": "nodemon server/index.js",
+    "sass": "sass --watch dist/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weschoi/resume.git"
+  },
+  "author": "Wesley Choi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/weschoi/resume/issues"
+  },
+  "homepage": "https://github.com/weschoi/resume#readme",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.4",
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2",
+    "sass": "^1.14.3",
+    "webpack": "^3.12.0"
+  }
+}
