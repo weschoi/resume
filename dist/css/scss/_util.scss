@@ -1,0 +1,12 @@
+@mixin display($direction, $x, $y) {
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: $direction;
+    align-items: $x;
+    justify-content: $y;
+  }
+
+@mixin width_height($width, $height) {
+    width: $width;
+    height: $height;
+}

@@ -33,7 +33,7 @@
     display: flex;
     border: 3px solid white;
     background: #dcdfe6;
-    box-shadow: 5px 5px 15px 0px #1e7892; }
+    box-shadow: 5px 5px 15px 0px #1f7892; }
     .mobile > div .iphone-section-1 {
       width: 205px;
       height: 80px;
@@ -189,7 +189,7 @@
             transition: color 0.6s;
             cursor: pointer; }
           .mobile > div .iphone-section-2 .history .history-1 span:hover {
-            color: #b2b2b2; }
+            color: #b3b3b3; }
         .mobile > div .iphone-section-2 .history .history-2 {
           flex: 1;
           text-align: right; }
@@ -213,18 +213,18 @@
             font-size: 11px;
             transition-timing-function: ease;
             transition: background-color 1s;
-            border: 1px solid #303a55;
+            border: 1px solid #313a55;
             position: relative;
             cursor: pointer; }
           .mobile > div .iphone-section-2 .button-group > div > div:hover {
-            background-color: #303a55; }
+            background-color: #313a55; }
           .mobile > div .iphone-section-2 .button-group > div .operator {
             color: #c7aa84; }
           .mobile > div .iphone-section-2 .button-group > div .mobile-button-equal {
             width: 50%;
             background-color: #c7aa84; }
           .mobile > div .iphone-section-2 .button-group > div .mobile-button-equal:hover {
-            background-color: #ffddab; }
+            background-color: #ffddac; }
 
 /* -------------------------------------------------------------------------- */
 /* physical!
@@ -259,7 +259,7 @@
     -ms-border-radius: 10px;
     border-radius: 10px;
     background-color: #2c2725;
-    box-shadow: 0px 10px #534a46; }
+    box-shadow: 0px 10px #544a46; }
     .physical .physical-container > div {
       width: 80%; }
     .physical .physical-container .braun {
@@ -365,18 +365,18 @@
           font-weight: 500;
           cursor: pointer; }
         .physical .physical-container .n-button-group > div > div:active {
-          background: #3b2e26;
+          background: #3c2f26;
           transform: translateY(3px); }
         .physical .physical-container .n-button-group > div .physical-button-2 {
           background-color: #bab59f;
           color: #2c2725; }
         .physical .physical-container .n-button-group > div .physical-button-2:active {
-          background: #94907f;
+          background: #95917f;
           transform: translateY(3px); }
         .physical .physical-container .n-button-group > div .physical-button-3 {
           background-color: #fd6433; }
         .physical .physical-container .n-button-group > div .physical-button-3:active {
-          background: #ca5028;
+          background: #ca5029;
           transform: translateY(3px); }
 
 .text-white {

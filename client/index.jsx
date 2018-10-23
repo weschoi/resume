@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Mobile, Desktop, Physical } from './components';
+import { MainContent } from './components';
 
 ReactDOM.render(
-  <div className="row no-gutters">
-    <Mobile />
-    <Desktop />
-    <Physical />
+  <div className="whole-resume">
+    <span>wesley choi</span>
+    <MainContent />
   </div>, 
-  document.getElementById('app'));
+  document.getElementsByClassName('app')[0]);

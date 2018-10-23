@@ -1,0 +1,132 @@
+@import "fonts";
+@import "util";
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0px;
+}
+
+body {
+    @include width_height(100%, 1300px);
+
+    font-family: "Swis721 LtCn BT", sans-serif;
+    font-size: 13px;
+}
+
+.app {
+    @include width_height(100%, 100%);
+    @include display(column, center, center);
+
+    padding: 90px 0px 90px 0px;
+
+    .whole-resume {
+        @include width_height(680px, 100%);
+        @include display(column, flex-start, flex-start);
+        
+        // background-color: rgb(204, 255, 255);
+
+        > span:first-child {
+            @include width_height(100%, 80px);
+            // border: 2px solid yellow;
+        }
+
+        // Main Content
+        > div {
+            @include width_height(100%, 100%);
+            @include display(column, center, space-between);
+            // border: 2px solid blue;
+
+            // about
+            > div:first-child {
+                height: 85px;
+            }
+
+            // skills
+            > div:nth-child(2) {
+                height: 80px;
+            }
+
+            // projects
+            > div:nth-child(3) {
+                height: 370px;
+            }
+
+            // experience
+            > div:nth-child(4) {
+                height: 225px;
+            }
+
+            // education
+            > div:nth-child(5) {
+                height: 35px;
+            }
+
+            // contacts
+            > div:nth-child(6) {
+                height: 80px;
+            }
+
+            // Section
+            > .section {
+                @include width_height(100%, 50px);
+                @include display(row, flex-start, flex-start);
+                // background-color: yellow;
+
+                > :first-child {
+                    width: 20%;
+                }
+
+                > :nth-child(2) {
+                    width: 80%;
+                    line-height: 1.4;
+                }
+
+                > .description {
+                    @include width_height(80%, 100%);
+                    @include display(column, flex-start, space-between);
+                    // border: 2px solid red;
+
+                    > .subsection {
+                        > span {
+                            color: #a7a9ac;
+
+                            > span {
+                                color: black;
+                            }
+                        }
+                    }
+                }
+
+                > .column-container {
+                    @include display(row, flex-start, flex-start);
+
+                    > div:first-child {
+                        > div {
+                            color: #a7a9ac;
+                        }
+                    }
+
+                    > div:nth-child(2) {
+                        margin-left: 20px;
+                        > div {
+                            a {
+                                text-decoration: none;
+                                color: black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// @media only screen and (min-width: 0px) and (max-width: 991px) {
+//   .container-fluid {
+//     height: 1700px;
+//   }
+// }

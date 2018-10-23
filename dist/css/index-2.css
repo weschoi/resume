@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "Swis721 LtCn BT";
+  src: url(fonts/SWZ721LC.TTF); }
+
+* {
+  box-sizing: border-box; }
+
+html,
+body {
+  margin: 0px; }
+
+body {
+  width: 100%;
+  height: 1300px;
+  font-family: "Swis721 LtCn BT", sans-serif;
+  font-size: 13px; }
+
+.app {
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 90px 0px 90px 0px; }
+  .app .whole-resume {
+    width: 680px;
+    height: 100%;
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; }
+    .app .whole-resume > span:first-child {
+      width: 100%;
+      height: 80px; }
+    .app .whole-resume > div {
+      width: 100%;
+      height: 100%;
+      display: -webkit-flex;
+      /* Safari */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between; }
+      .app .whole-resume > div > div:first-child {
+        height: 85px; }
+      .app .whole-resume > div > div:nth-child(2) {
+        height: 80px; }
+      .app .whole-resume > div > div:nth-child(3) {
+        height: 370px; }
+      .app .whole-resume > div > div:nth-child(4) {
+        height: 225px; }
+      .app .whole-resume > div > div:nth-child(5) {
+        height: 35px; }
+      .app .whole-resume > div > div:nth-child(6) {
+        height: 80px; }
+      .app .whole-resume > div > .section {
+        width: 100%;
+        height: 50px;
+        display: -webkit-flex;
+        /* Safari */
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start; }
+        .app .whole-resume > div > .section > :first-child {
+          width: 20%; }
+        .app .whole-resume > div > .section > :nth-child(2) {
+          width: 80%;
+          line-height: 1.4; }
+        .app .whole-resume > div > .section > .description {
+          width: 80%;
+          height: 100%;
+          display: -webkit-flex;
+          /* Safari */
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-between; }
+          .app .whole-resume > div > .section > .description > .subsection > span {
+            color: #a7a9ac; }
+            .app .whole-resume > div > .section > .description > .subsection > span > span {
+              color: black; }
+        .app .whole-resume > div > .section > .column-container {
+          display: -webkit-flex;
+          /* Safari */
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: flex-start; }
+          .app .whole-resume > div > .section > .column-container > div:first-child > div {
+            color: #a7a9ac; }
+          .app .whole-resume > div > .section > .column-container > div:nth-child(2) {
+            margin-left: 20px; }
+            .app .whole-resume > div > .section > .column-container > div:nth-child(2) > div a {
+              text-decoration: none;
+              color: black; }
