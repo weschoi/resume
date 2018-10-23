@@ -21,106 +21,89 @@ body {
     @include width_height(100%, 100%);
     @include display(column, center, center);
 
-    padding: 90px 0px 90px 0px;
+    padding: 70px 0px 80px 0px;
 
-    .whole-resume {
+    .resume {
         @include width_height(680px, 100%);
-        @include display(column, flex-start, flex-start);
-        
-        // background-color: rgb(204, 255, 255);
+        @include display(column, flex-start, space-between);
 
-        > span:first-child {
-            @include width_height(100%, 80px);
-            // border: 2px solid yellow;
+        // margin-right: 200px;
+
+        // border: 2px solid blue;
+
+        > .section {
+            @include width_height(100%, 0px);
+            @include display(row, flex-start, flex-start);
+            line-height: 1.4;
+
+            // border: 2px solid red;
+
+            > .section-title {
+                @include width_height(20%, 100%);
+            }
+
+            > .description {
+                @include width_height(80%, 100%);
+                @include display(column, flex-start, space-between);
+
+                > .subsection {
+                    > span {
+                        color: #a7a9ac;
+
+                        > span {
+                            color: black;
+                        }
+                    }
+                }
+            }
+
+            > .column-container {
+                @include display(row, flex-start, flex-start);
+
+                > div:first-child {
+                    > div {
+                        color: #a7a9ac;
+                    }
+                }
+
+                > div:nth-child(2) {
+                    margin-left: 20px;
+                    > div {
+                        a {
+                            text-decoration: none;
+                            color: black;
+                        }
+                    }
+                }
+            }
         }
 
-        // Main Content
-        > div {
-            @include width_height(100%, 100%);
-            @include display(column, center, space-between);
-            // border: 2px solid blue;
+        > .name {
+            height: 100px;
+        }
 
-            // about
-            > div:first-child {
-                height: 85px;
-            }
+        > .about {
+            height: 75px;
+        }
 
-            // skills
-            > div:nth-child(2) {
-                height: 80px;
-            }
+        > .skills {
+            height: 85px;
+        }
 
-            // projects
-            > div:nth-child(3) {
-                height: 370px;
-            }
+        > .projects {
+            height: 350px;
+        }
 
-            // experience
-            > div:nth-child(4) {
-                height: 225px;
-            }
+        > .experience {
+            height: 210px;
+        }
 
-            // education
-            > div:nth-child(5) {
-                height: 35px;
-            }
+        > .education {
+            height: 37px;
+        }
 
-            // contacts
-            > div:nth-child(6) {
-                height: 80px;
-            }
-
-            // Section
-            > .section {
-                @include width_height(100%, 50px);
-                @include display(row, flex-start, flex-start);
-                // background-color: yellow;
-
-                > :first-child {
-                    width: 20%;
-                }
-
-                > :nth-child(2) {
-                    width: 80%;
-                    line-height: 1.4;
-                }
-
-                > .description {
-                    @include width_height(80%, 100%);
-                    @include display(column, flex-start, space-between);
-                    // border: 2px solid red;
-
-                    > .subsection {
-                        > span {
-                            color: #a7a9ac;
-
-                            > span {
-                                color: black;
-                            }
-                        }
-                    }
-                }
-
-                > .column-container {
-                    @include display(row, flex-start, flex-start);
-
-                    > div:first-child {
-                        > div {
-                            color: #a7a9ac;
-                        }
-                    }
-
-                    > div:nth-child(2) {
-                        margin-left: 20px;
-                        > div {
-                            a {
-                                text-decoration: none;
-                                color: black;
-                            }
-                        }
-                    }
-                }
-            }
+        > .contact {
+            height: 75px;
         }
     }
 }

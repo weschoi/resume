@@ -1,10 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { MainContent } from './components';
+import { About, Skills, Projects, Experience, Education, Contact, Name } from './components/index';
 
 ReactDOM.render(
-  <div className="whole-resume">
-    <span>wesley choi</span>
-    <MainContent />
-  </div>, 
-  document.getElementsByClassName('app')[0]);
+  <div className="resume">
+    <Name />
+    <About />
+    <Skills />
+    <Projects />
+    <Experience />
+    <Education />
+    <Contact />
+  </div>, document.getElementsByClassName('app')[0]);
