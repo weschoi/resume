@@ -1,0 +1,190 @@
+@import "node_modules/bootstrap/scss/mixins/_breakpoints.scss";
+@import "node_modules/bootstrap/scss/_functions.scss";
+@import "node_modules/bootstrap/scss/_variables.scss";
+@import "util";
+
+
+// $sm-2: 870px;
+
+// @include media-breakpoint-down(sm) {
+//     body {
+//         background-color: blue;
+//     }
+// }
+
+// @media only screen and (min-width: 0px) and (max-width: 890px) {
+//     .resume {
+//         margin-right: 0px;
+//     }
+// }
+
+@media only screen and (min-width: 760px) {
+
+    body {
+        @include width_height(100%, 1300px);
+    }
+
+    .resume {
+        @include width_height(680px, 100%);
+        margin-right: 10%;
+
+        > .section {
+            @include display(row, flex-start, flex-start);
+
+            > .section-title {
+                @include width_height(20%, 100%);
+            }
+
+            > .description {
+                @include width_height(80%, 100%);
+            }
+        }
+
+        > .name {
+            height: 100px;
+        }
+
+        > .about {
+            height: 75px;
+
+            span {
+                width: 420px;
+            }
+        }
+
+        > .skills {
+            height: 85px;
+        }
+
+        > .projects {
+            height: 350px;
+        }
+
+        > .experience {
+            height: 210px;
+        }
+
+        > .education {
+            height: 37px;
+        }
+
+        > .contact {
+            height: 75px;
+        }
+    }
+}
+
+@media only screen and (min-width: 681px) and (max-width: 759px){
+
+    body {
+        @include width_height(100%, 1300px);
+    }
+
+    .resume {
+        @include width_height(680px, 100%);
+        margin-right: 0px;
+
+        > .section {
+            @include display(row, flex-start, flex-start);
+        }
+
+        > .name {
+            height: 100px;
+        }
+
+        > .about {
+            height: 75px;
+
+            span {
+                width: 420px;
+            }
+        }
+
+        > .skills {
+            height: 85px;
+        }
+
+        > .projects {
+            height: 350px;
+        }
+
+        > .experience {
+            height: 210px;
+        }
+
+        > .education {
+            height: 37px;
+        }
+
+        > .contact {
+            height: 75px;
+        }
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 680px) {
+    body {
+        @include width_height(100%, 1100px);
+
+        font-size: 10.5px;
+    }
+
+    .app {
+        padding: 50px 0px 50px 0px;
+    }
+
+    .resume {
+        @include width_height(95%, 100%);
+
+        > .section {
+            @include display(column, flex-start, flex-start);
+
+            > .section-title {
+                @include width_height(100%, 20%);
+            }
+
+            > .description {
+                @include width_height(100%, 100%);
+            }
+        }
+
+        > .name {
+            height: 50px;
+            // border: 2px solid red;
+        }
+
+        > .about {
+            height: 75px;
+
+            span {
+                width: 100%;
+            }
+            // border: 2px solid orange;
+        }
+
+        > .skills {
+            height: 50px;
+            // border: 2px solid yellow;
+        }
+
+        > .projects {
+            height: 320px;
+            // border: 2px solid green;
+        }
+
+        > .experience {
+            height: 250px;
+            // border: 2px solid blue;
+        }
+
+        > .education {
+            height: 40px;
+            // border: 2px solid purple;
+        }
+
+        > .contact {
+            height: 75px;
+            // border: 2px solid black;
+        }
+    }
+}

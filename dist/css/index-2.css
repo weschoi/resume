@@ -10,8 +10,6 @@ body {
   margin: 0px; }
 
 body {
-  width: 100%;
-  height: 1300px;
   font-family: "Swis721 LtCn BT", sans-serif;
   font-size: 13px; }
 
@@ -26,8 +24,6 @@ body {
   justify-content: center;
   padding: 70px 0px 80px 0px; }
   .app .resume {
-    width: 680px;
-    height: 100%;
     display: -webkit-flex;
     /* Safari */
     display: flex;
@@ -36,20 +32,8 @@ body {
     justify-content: space-between; }
     .app .resume > .section {
       width: 100%;
-      height: 0px;
-      display: -webkit-flex;
-      /* Safari */
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: flex-start;
       line-height: 1.4; }
-      .app .resume > .section > .section-title {
-        width: 20%;
-        height: 100%; }
       .app .resume > .section > .description {
-        width: 80%;
-        height: 100%;
         display: -webkit-flex;
         /* Safari */
         display: flex;
@@ -74,17 +58,113 @@ body {
           .app .resume > .section > .column-container > div:nth-child(2) > div a {
             text-decoration: none;
             color: black; }
-    .app .resume > .name {
+
+@media only screen and (min-width: 760px) {
+  body {
+    width: 100%;
+    height: 1300px; }
+  .resume {
+    width: 680px;
+    height: 100%;
+    margin-right: 10%; }
+    .resume > .section {
+      display: -webkit-flex;
+      /* Safari */
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start; }
+      .resume > .section > .section-title {
+        width: 20%;
+        height: 100%; }
+      .resume > .section > .description {
+        width: 80%;
+        height: 100%; }
+    .resume > .name {
       height: 100px; }
-    .app .resume > .about {
+    .resume > .about {
       height: 75px; }
-    .app .resume > .skills {
+      .resume > .about span {
+        width: 420px; }
+    .resume > .skills {
       height: 85px; }
-    .app .resume > .projects {
+    .resume > .projects {
       height: 350px; }
-    .app .resume > .experience {
+    .resume > .experience {
       height: 210px; }
-    .app .resume > .education {
+    .resume > .education {
       height: 37px; }
-    .app .resume > .contact {
+    .resume > .contact {
+      height: 75px; } }
+
+@media only screen and (min-width: 681px) and (max-width: 759px) {
+  body {
+    width: 100%;
+    height: 1300px; }
+  .resume {
+    width: 680px;
+    height: 100%;
+    margin-right: 0px; }
+    .resume > .section {
+      display: -webkit-flex;
+      /* Safari */
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start; }
+    .resume > .name {
+      height: 100px; }
+    .resume > .about {
       height: 75px; }
+      .resume > .about span {
+        width: 420px; }
+    .resume > .skills {
+      height: 85px; }
+    .resume > .projects {
+      height: 350px; }
+    .resume > .experience {
+      height: 210px; }
+    .resume > .education {
+      height: 37px; }
+    .resume > .contact {
+      height: 75px; } }
+
+@media only screen and (min-width: 0px) and (max-width: 680px) {
+  body {
+    width: 100%;
+    height: 1100px;
+    font-size: 10.5px; }
+  .app {
+    padding: 50px 0px 50px 0px; }
+  .resume {
+    width: 95%;
+    height: 100%; }
+    .resume > .section {
+      display: -webkit-flex;
+      /* Safari */
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start; }
+      .resume > .section > .section-title {
+        width: 100%;
+        height: 20%; }
+      .resume > .section > .description {
+        width: 100%;
+        height: 100%; }
+    .resume > .name {
+      height: 50px; }
+    .resume > .about {
+      height: 75px; }
+      .resume > .about span {
+        width: 100%; }
+    .resume > .skills {
+      height: 50px; }
+    .resume > .projects {
+      height: 320px; }
+    .resume > .experience {
+      height: 250px; }
+    .resume > .education {
+      height: 40px; }
+    .resume > .contact {
+      height: 75px; } }
