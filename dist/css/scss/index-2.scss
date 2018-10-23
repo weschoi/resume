@@ -1,6 +1,7 @@
 @import "fonts";
 @import "util";
 
+
 * {
     box-sizing: border-box;
 }
@@ -11,7 +12,6 @@ body {
 }
 
 body {
-    @include width_height(100%, 1300px);
 
     font-family: "Swis721 LtCn BT", sans-serif;
     font-size: 13px;
@@ -24,22 +24,18 @@ body {
     padding: 70px 0px 80px 0px;
 
     .resume {
-        @include width_height(680px, 100%);
         @include display(column, flex-start, space-between);
 
-        margin-right: 200px;
+        // border: 2px solid red;
 
         > .section {
-            @include width_height(100%, 0px);
-            @include display(row, flex-start, flex-start);
+            width: 100%;
             line-height: 1.4;
 
             > .section-title {
-                @include width_height(20%, 100%);
             }
 
             > .description {
-                @include width_height(80%, 100%);
                 @include display(column, flex-start, space-between);
 
                 > .subsection {
@@ -73,39 +69,7 @@ body {
                 }
             }
         }
-
-        > .name {
-            height: 100px;
-        }
-
-        > .about {
-            height: 75px;
-        }
-
-        > .skills {
-            height: 85px;
-        }
-
-        > .projects {
-            height: 350px;
-        }
-
-        > .experience {
-            height: 210px;
-        }
-
-        > .education {
-            height: 37px;
-        }
-
-        > .contact {
-            height: 75px;
-        }
     }
 }
 
-// @media only screen and (min-width: 0px) and (max-width: 991px) {
-//   .container-fluid {
-//     height: 1700px;
-//   }
-// }
+@import "phone";
