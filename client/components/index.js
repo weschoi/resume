@@ -1,4 +1,4 @@
-import MainContent from './mainContent';
+import Name from './Name';
 import About from './About';
 import Skills from './Skills';
 import Projects from './Projects';
@@ -7,7 +7,7 @@ import Education from './Education';
 import Contact from './Contact';
 
 export {
-    MainContent,
+    Name,
     About,
     Skills,
     Projects,

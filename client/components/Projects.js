@@ -9,8 +9,8 @@ export default class Projects extends React.Component {
 
   render() {
     return (
-      <div className="section">
-        <span>projects</span>
+      <div className="section projects">
+        <div className="section-title">projects</div>
         <div className="description">
           <div className="subsection">
               <span><a href="http://humansofnewyork.herokuapp.com/" style={{"textDecoration": "none", "color": "#a7a9ac"}}>humans of new york</a></span>

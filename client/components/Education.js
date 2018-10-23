@@ -9,8 +9,8 @@ export default class Education extends React.Component {
 
   render() {
     return (
-      <div className="section">
-        <span>education</span>
+      <div className="section education">
+        <div className="section-title">education</div>
 
         <div className="description">
           <div className="subsection">

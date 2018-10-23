@@ -9,8 +9,8 @@ export default class Experience extends React.Component {
   // http://detroit.vc/
   render() {
     return (
-      <div className="section">
-        <span>experience</span>
+      <div className="section experience">
+        <div className="section-title">experience</div>
 
         <div className="description">
           <div className="subsection">
