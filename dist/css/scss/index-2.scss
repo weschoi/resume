@@ -27,16 +27,12 @@ body {
         @include width_height(680px, 100%);
         @include display(column, flex-start, space-between);
 
-        // margin-right: 200px;
-
-        // border: 2px solid blue;
+        margin-right: 200px;
 
         > .section {
             @include width_height(100%, 0px);
             @include display(row, flex-start, flex-start);
             line-height: 1.4;
-
-            // border: 2px solid red;
 
             > .section-title {
                 @include width_height(20%, 100%);

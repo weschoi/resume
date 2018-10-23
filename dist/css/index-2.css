@@ -33,7 +33,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-right: 200px; }
     .app .resume > .section {
       width: 100%;
       height: 0px;
