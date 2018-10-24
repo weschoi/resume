@@ -1,18 +1,15 @@
 import React from 'react';
 
 export default class Experience extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-    }
-  }
-  // http://detroit.vc/
+
   render() {
     return (
       <div className="section experience">
+
         <div className="section-title">experience</div>
 
         <div className="description">
+        
           <div className="subsection">
             <span>2018&ensp;<span><a href="https://www.google.com/" style={{"textDecoration": "none", "color": "black"}}>google</a>&ensp;–&ensp;graphic designer [contract]</span></span>
             <div>Developed single page website that reinvents user experience of journalistic content</div>
@@ -31,6 +28,7 @@ export default class Experience extends React.Component {
             <div>Collaborated with a d.c.-based dev firm to design the new detroit.vc website</div>
             <div>Led art direction for event campaign (250 guests) that set visuals for invitations, presentations, badges, etc</div>
           </div>
+
         </div>
       </div>
     )
