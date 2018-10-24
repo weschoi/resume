@@ -134,7 +134,7 @@
 
 @media only screen and (min-width: 0px) and (max-width: 655px) {
     body {
-        @include width_height(100%, 1200px);
+        @include width_height(100%, 1125px);
 
         font-size: 10.5px;
     }
@@ -177,11 +177,11 @@
         }
 
         > .projects {
-            height: 320px;
+            height: 335px;
         }
 
         > .experience {
-            height: 230px;
+            height: 245px;
         }
 
         > .education {

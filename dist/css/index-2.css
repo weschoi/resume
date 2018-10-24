@@ -150,7 +150,7 @@ body {
 @media only screen and (min-width: 0px) and (max-width: 655px) {
   body {
     width: 100%;
-    height: 1200px;
+    height: 1125px;
     font-size: 10.5px; }
   .app {
     padding: 50px 0px 35px 0px; }
@@ -180,9 +180,9 @@ body {
     .resume > .skills {
       height: 80px; }
     .resume > .projects {
-      height: 320px; }
+      height: 335px; }
     .resume > .experience {
-      height: 230px; }
+      height: 245px; }
     .resume > .education {
       height: 45px; }
     .resume > .contact {
