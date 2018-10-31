@@ -117,11 +117,11 @@
     }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 655px) {
+@media only screen and (min-width: 390px) and (max-width: 655px) {
     body {
-        @include width_height(100%, 1125px);
+        @include width_height(100%, 1200px);
 
-        font-size: 10.5px;
+        font-size: 12px;
     }
 
     .app {
@@ -150,7 +150,7 @@
         }
 
         > .about {
-            height: 75px;
+            height: 90px;
 
             span {
                 width: 100%;
@@ -158,23 +158,99 @@
         }
 
         > .skills {
-            height: 80px;
+            height: 87px;
         }
 
         > .projects {
-            height: 310px;
+            height: 367px;
         }
 
         > .experience {
-            height: 225px;
+            height: 245px;
         }
 
         > .education {
-            height: 40px;
+            height: 48px;
         }
 
         > .contact {
-            height: 80px;
+            height: 83px;
+        }
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 389px) {
+    body {
+        @include width_height(100%, 1300px);
+
+        font-size: 12px;
+    }
+
+    .app {
+        padding: 50px 0px 35px 0px;
+    }
+
+    .resume {
+        @include width_height(95%, 100%);
+
+        > .section {
+            @include display(column, flex-start, flex-start);
+
+            > .section-title {
+                @include width_height(100%, 20px);
+
+                font-family: "Swis721 BoldCn BT", sans-serif;
+            }
+
+            > .description {
+                @include width_height(100%, 100%);
+            }
+        }
+
+        > .name {
+            height: 60px;
+        }
+
+        > .about {
+            height: 100px;
+
+            span {
+                width: 100%;
+            }
+        }
+
+        > .skills {
+            height: 105px;
+        }
+
+        > .projects {
+            height: 450px;
+
+            > .description {
+
+                > .subsection {
+
+                    > div {
+
+                        // content: "• "
+                        display: list-item;
+                        list-style-type: disc;
+                        list-style-position: outside;
+                    }
+                }
+            }
+        }
+
+        > .experience {
+            height: 260px;
+        }
+
+        > .education {
+            height: 48px;
+        }
+
+        > .contact {
+            height: 83px;
         }
     }
 }
