@@ -91,6 +91,10 @@ body {
       .resume > .section > .description {
         width: 80%;
         height: 100%; }
+        .resume > .section > .description > .subsection > ul {
+          margin: 0px;
+          padding: 0px;
+          list-style: none; }
     .resume > .name {
       height: 100px; }
     .resume > .about {
@@ -129,6 +133,10 @@ body {
       .resume > .section > .description {
         width: 80%;
         height: 100%; }
+        .resume > .section > .description > .subsection > ul {
+          margin: 0px;
+          padding: 0px;
+          list-style: none; }
     .resume > .name {
       height: 100px; }
     .resume > .about {
@@ -170,12 +178,16 @@ body {
       .resume > .section > .description {
         width: 100%;
         height: 100%; }
+        .resume > .section > .description > .subsection > ul {
+          margin: 0px;
+          padding: 0px;
+          list-style: none; }
     .resume > .name {
       height: 60px; }
     .resume > .about {
       height: 90px; }
       .resume > .about span {
-        width: 100%; }
+        width: 390px; }
     .resume > .skills {
       height: 87px; }
     .resume > .projects {
@@ -190,7 +202,7 @@ body {
 @media only screen and (min-width: 0px) and (max-width: 389px) {
   body {
     width: 100%;
-    height: 1300px;
+    height: 1400px;
     font-size: 12px; }
   .app {
     padding: 50px 0px 35px 0px; }
@@ -211,6 +223,9 @@ body {
       .resume > .section > .description {
         width: 100%;
         height: 100%; }
+        .resume > .section > .description > .subsection > ul {
+          margin: 0px;
+          padding-left: 18px; }
     .resume > .name {
       height: 60px; }
     .resume > .about {
@@ -220,13 +235,9 @@ body {
     .resume > .skills {
       height: 105px; }
     .resume > .projects {
-      height: 450px; }
-      .resume > .projects > .description > .subsection > div {
-        display: list-item;
-        list-style-type: disc;
-        list-style-position: outside; }
+      height: 470px; }
     .resume > .experience {
-      height: 260px; }
+      height: 280px; }
     .resume > .education {
       height: 48px; }
     .resume > .contact {
