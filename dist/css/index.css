@@ -230,8 +230,8 @@ body {
       height: 60px; }
     .resume > .about {
       height: 100px; }
-      .resume > .about span {
-        width: 350px; }
+      .resume > .about > .description span {
+        width: 100%; }
     .resume > .skills {
       height: 105px; }
     .resume > .projects {
