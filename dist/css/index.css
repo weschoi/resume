@@ -77,8 +77,7 @@ body {
     height: 1300px; }
   .resume {
     width: 680px;
-    height: 100%;
-    margin-right: 10%; }
+    height: 100%; }
     .resume > .section {
       display: -webkit-flex;
       /* Safari */

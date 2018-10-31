@@ -3,21 +3,6 @@
 @import "node_modules/bootstrap/scss/_variables.scss";
 @import "util";
 
-
-// $sm-2: 870px;
-
-// @include media-breakpoint-down(sm) {
-//     body {
-//         background-color: blue;
-//     }
-// }
-
-// @media only screen and (min-width: 0px) and (max-width: 890px) {
-//     .resume {
-//         margin-right: 0px;
-//     }
-// }
-
 @media only screen and (min-width: 760px) {
 
     body {
@@ -26,7 +11,7 @@
 
     .resume {
         @include width_height(680px, 100%);
-        margin-right: 10%;
+        // margin-right: 10%;
 
         > .section {
             @include display(row, flex-start, flex-start);
