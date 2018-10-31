@@ -173,10 +173,14 @@
         > .about {
             height: 90px;
 
-            span {
-                // width: 100%;
-                width: 390px;
+            > div {
+                > span {
+                    // width: 100%;
+                    width: 365px;
+                }
+
             }
+
         }
 
         > .skills {

@@ -186,8 +186,8 @@ body {
       height: 60px; }
     .resume > .about {
       height: 90px; }
-      .resume > .about span {
-        width: 390px; }
+      .resume > .about > div > span {
+        width: 365px; }
     .resume > .skills {
       height: 87px; }
     .resume > .projects {
