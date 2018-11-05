@@ -74,7 +74,7 @@ body {
 @media only screen and (min-width: 760px) {
   body {
     width: 100%;
-    height: 1300px; }
+    height: 1370px; }
   .resume {
     width: 680px;
     height: 100%; }
@@ -104,7 +104,7 @@ body {
     .resume > .skills {
       height: 85px; }
     .resume > .projects {
-      height: 350px; }
+      height: 430px; }
     .resume > .experience {
       height: 210px; }
     .resume > .education {
@@ -115,7 +115,7 @@ body {
 @media only screen and (min-width: 656px) and (max-width: 759px) {
   body {
     width: 100%;
-    height: 1300px; }
+    height: 1370px; }
   .resume {
     width: 630px;
     height: 100%;
@@ -146,7 +146,7 @@ body {
     .resume > .skills {
       height: 85px; }
     .resume > .projects {
-      height: 350px; }
+      height: 410px; }
     .resume > .experience {
       height: 210px; }
     .resume > .education {
@@ -154,10 +154,10 @@ body {
     .resume > .contact {
       height: 75px; } }
 
-@media only screen and (min-width: 390px) and (max-width: 655px) {
+@media only screen and (min-width: 463px) and (max-width: 655px) {
   body {
     width: 100%;
-    height: 1200px;
+    height: 1250px;
     font-size: 12px; }
   .app {
     padding: 50px 0px 35px 0px; }
@@ -187,22 +187,66 @@ body {
     .resume > .about {
       height: 90px; }
       .resume > .about > div > span {
-        width: 365px; }
+        width: 390px; }
     .resume > .skills {
       height: 87px; }
     .resume > .projects {
-      height: 367px; }
+      height: 400px; }
     .resume > .experience {
-      height: 245px; }
+      height: 215px; }
     .resume > .education {
       height: 48px; }
     .resume > .contact {
       height: 83px; } }
 
-@media only screen and (min-width: 0px) and (max-width: 389px) {
+@media only screen and (min-width: 401px) and (max-width: 462px) {
   body {
     width: 100%;
-    height: 1400px;
+    height: 1550px;
+    font-size: 12px; }
+  .app {
+    padding: 50px 0px 35px 0px; }
+  .resume {
+    width: 95%;
+    height: 100%; }
+    .resume > .section {
+      display: -webkit-flex;
+      /* Safari */
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start; }
+      .resume > .section > .section-title {
+        width: 100%;
+        height: 20px;
+        font-family: "Swis721 BoldCn BT", sans-serif; }
+      .resume > .section > .description {
+        width: 100%;
+        height: 100%; }
+        .resume > .section > .description > .subsection > ul {
+          margin: 0px;
+          padding-left: 18px; }
+    .resume > .name {
+      height: 60px; }
+    .resume > .about {
+      height: 100px; }
+      .resume > .about > .description span {
+        width: 100%; }
+    .resume > .skills {
+      height: 95px; }
+    .resume > .projects {
+      height: 470px; }
+    .resume > .experience {
+      height: 300px; }
+    .resume > .education {
+      height: 48px; }
+    .resume > .contact {
+      height: 90px; } }
+
+@media only screen and (min-width: 0px) and (max-width: 400px) {
+  body {
+    width: 100%;
+    height: 1550px;
     font-size: 12px; }
   .app {
     padding: 50px 0px 35px 0px; }
@@ -235,10 +279,10 @@ body {
     .resume > .skills {
       height: 105px; }
     .resume > .projects {
-      height: 470px; }
+      height: 550px; }
     .resume > .experience {
-      height: 280px; }
+      height: 300px; }
     .resume > .education {
       height: 48px; }
     .resume > .contact {
-      height: 83px; } }
+      height: 90px; } }

@@ -13,9 +13,9 @@ export default class Experience extends React.Component {
           <div className="subsection">
             <span>2018&ensp;<span><a href="https://www.google.com/" style={{"textDecoration": "none", "color": "black"}}>google</a>&ensp;–&ensp;graphic designer [contract]</span></span>
             <ul>
-              <li>Developed single page website that reinvents user experience of journalistic content</li>
-              <li>Implemented magic scroll that dynamically changes interface with user scrolling</li>
-              <li>Built collapsible nav menu from scratch while staying true to original mockup</li>
+              <li>Implemented global rebranding of Google Ads & Google Marketing Platform alongside fellow creatives</li>
+              <li>Applied newest standards to hundreds of sales collateral, now unified under a single visual brand</li>
+              <li>Developed material with compelling illustrations for sellers across several products and languages</li>
             </ul>
           </div>
 
@@ -31,7 +31,7 @@ export default class Experience extends React.Component {
             <span>2015&ensp;<span><a href="http://detroit.vc/" style={{"textDecoration": "none", "color": "black"}}>detroit venture partners</a>&ensp;–&ensp;graphic designer</span></span>
             <ul>
               <li>Collaborated with a d.c.-based dev firm to design the new detroit.vc website</li>
-              <li>Led art direction for event campaign (250 guests) that set visuals for invitations, presentations, badges, etc</li>
+              <li>Led art direction for event campaign (250 guests) that set visuals for invites, presentations, badges, etc</li>
             </ul>
           </div>
 
