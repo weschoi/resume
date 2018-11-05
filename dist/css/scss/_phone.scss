@@ -6,7 +6,7 @@
 @media only screen and (min-width: 760px) {
 
     body {
-        @include width_height(100%, 1300px);
+        @include width_height(100%, 1370px);
     }
 
     .resume {
@@ -14,6 +14,7 @@
 
         > .section {
             @include display(row, flex-start, flex-start);
+            // border: 2px solid red;
 
             > .section-title {
                 @include width_height(20%, 100%);
@@ -49,7 +50,8 @@
         }
 
         > .projects {
-            height: 350px;
+            // height: 350px;
+            height: 430px;
         }
 
         > .experience {
@@ -69,7 +71,7 @@
 @media only screen and (min-width: 656px) and (max-width: 759px){
 
     body {
-        @include width_height(100%, 1300px);
+        @include width_height(100%, 1370px);
     }
 
     .resume {
@@ -113,7 +115,8 @@
         }
 
         > .projects {
-            height: 350px;
+            // height: 350px;
+            height: 410px;
         }
 
         > .experience {
@@ -130,9 +133,14 @@
     }
 }
 
-@media only screen and (min-width: 390px) and (max-width: 655px) {
+@media only screen and (min-width: 463px) and (max-width: 655px) {
+
+    * {
+        // border: 0.1px solid red;
+    }
+
     body {
-        @include width_height(100%, 1200px);
+        @include width_height(100%, 1250px);
 
         font-size: 12px;
     }
@@ -176,7 +184,7 @@
             > div {
                 > span {
                     // width: 100%;
-                    width: 365px;
+                    width: 390px;
                 }
 
             }
@@ -188,11 +196,14 @@
         }
 
         > .projects {
-            height: 367px;
+            // border: 1px solid yellow;
+            // height: 367px;
+            height: 400px;
         }
 
         > .experience {
-            height: 245px;
+            // border: 1px solid green;
+            height: 215px;
         }
 
         > .education {
@@ -205,9 +216,92 @@
     }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 389px) {
+@media only screen and (min-width: 401px) and (max-width: 462px) {
+
+    *{
+        // border: 1px solid red;
+    }
+
     body {
-        @include width_height(100%, 1400px);
+        @include width_height(100%, 1550px);
+
+        font-size: 12px;
+    }
+
+    .app {
+        padding: 50px 0px 35px 0px;
+    }
+
+    .resume {
+        @include width_height(95%, 100%);
+
+        > .section {
+            @include display(column, flex-start, flex-start);
+
+            > .section-title {
+                @include width_height(100%, 20px);
+
+                font-family: "Swis721 BoldCn BT", sans-serif;
+            }
+
+            > .description {
+                @include width_height(100%, 100%);
+
+                > .subsection {
+                    > ul {
+                        margin: 0px;
+                        padding-left: 18px;
+                    }
+                }
+            }
+        }
+
+        > .name {
+            height: 60px;
+        }
+
+        > .about {
+            height: 100px;
+
+            > .description {
+                span {
+                    width: 100%;
+                }
+            }
+
+        }
+
+        > .skills {
+            height: 95px;
+        }
+
+        > .projects {
+            // height: 470px;
+            height: 470px;
+        }
+
+        > .experience {
+            height: 300px;
+        }
+
+        > .education {
+            height: 48px;
+        }
+
+        > .contact {
+            height: 90px;
+        }
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 400px) {
+
+    *{
+        // border: 1px solid red;
+    }
+
+    body {
+        @include width_height(100%, 1550px);
 
         font-size: 12px;
     }
@@ -260,11 +354,12 @@
         }
 
         > .projects {
-            height: 470px;
+            // height: 470px;
+            height: 550px;
         }
 
         > .experience {
-            height: 280px;
+            height: 300px;
         }
 
         > .education {
@@ -272,7 +367,7 @@
         }
 
         > .contact {
-            height: 83px;
+            height: 90px;
         }
     }
 }
