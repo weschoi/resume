@@ -13,7 +13,7 @@ export default class Skills extends React.Component {
         <div className="subsection">
           <span>technical</span>
           <div>strong&ensp;–&ensp;javascript&ensp;html&ensp;css&ensp;sass&ensp;react&ensp;redux&ensp;mysql&ensp;postgresql&ensp;ajax&ensp;responsive</div>
-          <div>experienced&ensp;–&ensp;angularjs&ensp;json&ensp;socket.io&ensp;git&ensp;bootstrap&ensp;jquery&ensp;node</div>
+          <div>experienced&ensp;–&ensp;angularjs&ensp;json&ensp;socket.io&ensp;git&ensp;bootstrap&ensp;node&ensp;cms</div>
         </div>
         
         <div className="subsection">
