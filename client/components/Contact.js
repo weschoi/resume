@@ -4,28 +4,29 @@ export default class Contact extends React.Component {
 
   render() {
     return (
-      <div className="section contact">
+      <footer className="contact">
 
-        <div className="section-title">contact</div>
+        <h1>contact</h1>
 
-        <div className="description column-container">
+        <div>
 
-          <div className="subsection">
-            <div>email</div>
-            <div>portfolio</div>
-            <div>github</div>
-            <div>linkedin</div>
-          </div>
+          <ul>
+            <li>email</li>
+            <li>portfolio</li>
+            <li>github</li>
+            <li>linkedin</li>
+          </ul>
 
-          <div className="subsection">
-            <div><a href="mailto:weschoi.creative@gmail.com">weschoi.creative@gmail.com</a></div>
-            <div><a href="http://www.weschoi.com/">weschoi.com</a></div>
-            <div><a href="https://github.com/weschoi">github.com/weschoi</a></div>
-            <div><a href="https://www.linkedin.com/in/wesley-choi-289529102/">linkedin.com/in/wesley-choi-289529102/</a></div>
-          </div>
+          <ul>
+            <li><a href="mailto:weschoi.creative@gmail.com">weschoi.creative@gmail.com</a></li>
+            <li><a href="http://www.weschoi.com/">weschoi.com</a></li>
+            <li><a href="https://github.com/weschoi">github.com/weschoi</a></li>
+            <li><a href="https://www.linkedin.com/in/wesley-choi-289529102/">linkedin.com/in/wesley-choi-289529102/</a></li>
+          </ul>
 
         </div>
-      </div>
+
+      </footer>
     )
   }
 }

@@ -3,69 +3,74 @@
 
 * {
     box-sizing: border-box;
-}
-
-html,
-body {
-    margin: 0px;
-}
-
-body {
-    font-family: "Swis721 LtCn BT", sans-serif;
-    font-size: 13px;
+    margin: 0;
+    padding: 0;
 }
 
 .app {
-    @include width_height(100%, 100%);
-    @include display(column, center, center);
-
+    @include flex-display(column, center, center, 100%, 100%);
     padding: 70px 0px 80px 0px;
+}
 
-    .resume {
+main {
+    @include display(column, flex-start, space-between);
+    font-size: 13px;
+    font-family: "Swis721 LtCn BT", sans-serif;
+}
+
+header, article, footer {
+    width: 100%;
+    line-height: 1.4;
+}
+
+header {
+    div {
+        color: $gray;
+    }
+}
+
+article {
+    div {
         @include display(column, flex-start, space-between);
 
-        > .section {
-            width: 100%;
-            line-height: 1.4;
+        section {
+            > span {
+                color: $gray;
 
-            > .section-title {
-            }
+                > span {
+                    color: black;
 
-            > .description {
-                @include display(column, flex-start, space-between);
-
-                > .subsection {
-                    > span {
-                        color: #a7a9ac;
-
-                        > span {
-                            color: black;
-                        }
-                    }
-                }
-            }
-
-            > .column-container {
-                @include display(row, flex-start, flex-start);
-
-                > div:first-child {
-                    > div {
-                        color: #a7a9ac;
-                    }
-                }
-
-                > div:nth-child(2) {
-                    margin-left: 20px;
-                    > div {
-                        a {
-                            text-decoration: none;
-                            color: black;
-                        }
+                    a {
+                        text-decoration: none;
+                        color: black;
                     }
                 }
             }
         }
     }
 }
+
+footer {
+    > div {
+        @include display(row, flex-start, flex-start);
+
+        ul:first-child {
+            list-style: none;
+            color: $gray;
+        }
+
+        ul:nth-child(2) {
+            list-style: none;
+            margin-left: 20px;
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
+
+
 
 @import "phone";

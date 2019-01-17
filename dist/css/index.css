@@ -15,144 +15,155 @@
   src: url(fonts/SWZ721KC.TTF); }
 
 * {
-  box-sizing: border-box; }
-
-html,
-body {
-  margin: 0px; }
-
-body {
-  font-family: "Swis721 LtCn BT", sans-serif;
-  font-size: 13px; }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
 .app {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
+  padding: 70px 0px 80px 0px; }
+
+main {
   display: -webkit-flex;
   /* Safari */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 70px 0px 80px 0px; }
-  .app .resume {
-    display: -webkit-flex;
-    /* Safari */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between; }
-    .app .resume > .section {
-      width: 100%;
-      line-height: 1.4; }
-      .app .resume > .section > .description {
-        display: -webkit-flex;
-        /* Safari */
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between; }
-        .app .resume > .section > .description > .subsection > span {
-          color: #a7a9ac; }
-          .app .resume > .section > .description > .subsection > span > span {
-            color: black; }
-      .app .resume > .section > .column-container {
-        display: -webkit-flex;
-        /* Safari */
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: flex-start; }
-        .app .resume > .section > .column-container > div:first-child > div {
-          color: #a7a9ac; }
-        .app .resume > .section > .column-container > div:nth-child(2) {
-          margin-left: 20px; }
-          .app .resume > .section > .column-container > div:nth-child(2) > div a {
-            text-decoration: none;
-            color: black; }
+  align-items: flex-start;
+  justify-content: space-between;
+  font-size: 13px;
+  font-family: "Swis721 LtCn BT", sans-serif; }
+
+header, article, footer {
+  width: 100%;
+  line-height: 1.4; }
+
+header div {
+  color: #a7a9ac; }
+
+article div {
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between; }
+  article div section > span {
+    color: #a7a9ac; }
+    article div section > span > span {
+      color: black; }
+      article div section > span > span a {
+        text-decoration: none;
+        color: black; }
+
+footer > div {
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start; }
+  footer > div ul:first-child {
+    list-style: none;
+    color: #a7a9ac; }
+  footer > div ul:nth-child(2) {
+    list-style: none;
+    margin-left: 20px; }
+    footer > div ul:nth-child(2) a {
+      text-decoration: none;
+      color: black; }
 
 @media only screen and (min-width: 760px) {
   body {
     width: 100%;
     height: 1370px; }
-  .resume {
+  h1 {
+    width: 20%;
+    height: 100%;
+    font-size: 13px;
+    font-weight: normal; }
+  main {
     width: 680px;
     height: 100%; }
-    .resume > .section {
-      display: -webkit-flex;
-      /* Safari */
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: flex-start; }
-      .resume > .section > .section-title {
-        width: 20%;
-        height: 100%; }
-      .resume > .section > .description {
-        width: 80%;
-        height: 100%; }
-        .resume > .section > .description > .subsection > ul {
-          margin: 0px;
-          padding: 0px;
-          list-style: none; }
-    .resume > .name {
-      height: 100px; }
-    .resume > .about {
-      height: 75px; }
-      .resume > .about span {
-        width: 420px; }
-    .resume > .skills {
-      height: 85px; }
-    .resume > .projects {
-      height: 430px; }
-    .resume > .experience {
-      height: 210px; }
-    .resume > .education {
-      height: 37px; }
-    .resume > .contact {
-      height: 75px; } }
+  header, article, footer {
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start; }
+    header > div, article > div, footer > div {
+      width: 80%;
+      height: 100%; }
+  article section > ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none; }
+  header {
+    height: 100px; }
+  .about {
+    height: 75px; }
+    .about span {
+      width: 420px; }
+  .skills {
+    height: 85px; }
+  .projects {
+    height: 430px; }
+  .experience {
+    height: 210px; }
+  .education {
+    height: 37px; }
+  footer {
+    height: 75px; } }
 
 @media only screen and (min-width: 656px) and (max-width: 759px) {
   body {
     width: 100%;
     height: 1370px; }
-  .resume {
+  h1 {
+    width: 20%;
+    height: 100%;
+    font-size: 13px;
+    font-weight: normal; }
+  main {
     width: 630px;
     height: 100%;
     margin-right: 0px; }
-    .resume > .section {
-      display: -webkit-flex;
-      /* Safari */
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: flex-start; }
-      .resume > .section > .section-title {
-        width: 20%;
-        height: 100%; }
-      .resume > .section > .description {
-        width: 80%;
-        height: 100%; }
-        .resume > .section > .description > .subsection > ul {
-          margin: 0px;
-          padding: 0px;
-          list-style: none; }
-    .resume > .name {
-      height: 100px; }
-    .resume > .about {
-      height: 75px; }
-      .resume > .about span {
-        width: 420px; }
-    .resume > .skills {
-      height: 85px; }
-    .resume > .projects {
-      height: 410px; }
-    .resume > .experience {
-      height: 210px; }
-    .resume > .education {
-      height: 37px; }
-    .resume > .contact {
-      height: 75px; } }
+  header, article, footer {
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start; }
+    header > div, article > div, footer > div {
+      width: 80%;
+      height: 100%; }
+  article section > ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none; }
+  header {
+    height: 100px; }
+  .about {
+    height: 75px; }
+    .about span {
+      width: 420px; }
+  .skills {
+    height: 85px; }
+  .projects {
+    height: 410px; }
+  .experience {
+    height: 210px; }
+  .education {
+    height: 37px; }
+  footer {
+    height: 75px; } }
 
 @media only screen and (min-width: 463px) and (max-width: 655px) {
   body {
@@ -161,128 +172,135 @@ body {
     font-size: 12px; }
   .app {
     padding: 50px 0px 35px 0px; }
-  .resume {
+  h1 {
+    width: 100%;
+    height: 20px;
+    font-family: "Swis721 BoldCn BT", sans-serif;
+    font-size: 13px; }
+  main {
     width: 95%;
     height: 100%; }
-    .resume > .section {
-      display: -webkit-flex;
-      /* Safari */
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start; }
-      .resume > .section > .section-title {
-        width: 100%;
-        height: 20px;
-        font-family: "Swis721 BoldCn BT", sans-serif; }
-      .resume > .section > .description {
-        width: 100%;
-        height: 100%; }
-        .resume > .section > .description > .subsection > ul {
-          margin: 0px;
-          padding: 0px;
-          list-style: none; }
-    .resume > .name {
-      height: 60px; }
-    .resume > .about {
-      height: 90px; }
-      .resume > .about > div > span {
-        width: 390px; }
-    .resume > .skills {
-      height: 87px; }
-    .resume > .projects {
-      height: 400px; }
-    .resume > .experience {
-      height: 215px; }
-    .resume > .education {
-      height: 48px; }
-    .resume > .contact {
-      height: 83px; } }
+  header, article, footer {
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; }
+    header > div, article > div, footer > div {
+      width: 100%;
+      height: 100%; }
+  header section > ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none; }
+  article section > ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none; }
+  header {
+    height: 60px; }
+  .about {
+    height: 90px; }
+    .about span {
+      width: 420px; }
+  .skills {
+    height: 87px; }
+  .projects {
+    height: 400px; }
+  .experience {
+    height: 215px; }
+  .education {
+    height: 48px; }
+  footer {
+    height: 83px; } }
 
 @media only screen and (min-width: 401px) and (max-width: 462px) {
   body {
     width: 100%;
-    height: 1550px;
-    font-size: 12px; }
+    height: 1550px; }
   .app {
     padding: 50px 0px 35px 0px; }
-  .resume {
+  h1 {
+    width: 100%;
+    height: 20px;
+    font-family: "Swis721 BoldCn BT", sans-serif;
+    font-size: 12px; }
+  main {
     width: 95%;
-    height: 100%; }
-    .resume > .section {
-      display: -webkit-flex;
-      /* Safari */
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start; }
-      .resume > .section > .section-title {
-        width: 100%;
-        height: 20px;
-        font-family: "Swis721 BoldCn BT", sans-serif; }
-      .resume > .section > .description {
-        width: 100%;
-        height: 100%; }
-        .resume > .section > .description > .subsection > ul {
-          margin: 0px;
-          padding-left: 18px; }
-    .resume > .name {
-      height: 60px; }
-    .resume > .about {
-      height: 100px; }
-      .resume > .about > .description span {
-        width: 100%; }
-    .resume > .skills {
-      height: 95px; }
-    .resume > .projects {
-      height: 470px; }
-    .resume > .experience {
-      height: 300px; }
-    .resume > .education {
-      height: 48px; }
-    .resume > .contact {
-      height: 90px; } }
+    height: 100%;
+    font-size: 12px; }
+  header, article, footer {
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; }
+    header > div, article > div, footer > div {
+      width: 100%;
+      height: 100%; }
+  article section > ul {
+    margin: 0px;
+    padding-left: 18px; }
+  header {
+    height: 60px; }
+  .about {
+    height: 100px; }
+    .about span {
+      width: 100%; }
+  .skills {
+    height: 95px; }
+  .projects {
+    height: 470px; }
+  .experience {
+    height: 300px; }
+  .education {
+    height: 48px; }
+  footer {
+    height: 90px; } }
 
-@media only screen and (min-width: 0px) and (max-width: 400px) {
+@media only screen and (max-width: 400px) {
   body {
     width: 100%;
-    height: 1550px;
-    font-size: 12px; }
+    height: 1550px; }
   .app {
     padding: 50px 0px 35px 0px; }
-  .resume {
+  h1 {
+    width: 100%;
+    height: 20px;
+    font-family: "Swis721 BoldCn BT", sans-serif;
+    font-size: 12px; }
+  main {
     width: 95%;
-    height: 100%; }
-    .resume > .section {
-      display: -webkit-flex;
-      /* Safari */
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start; }
-      .resume > .section > .section-title {
-        width: 100%;
-        height: 20px;
-        font-family: "Swis721 BoldCn BT", sans-serif; }
-      .resume > .section > .description {
-        width: 100%;
-        height: 100%; }
-        .resume > .section > .description > .subsection > ul {
-          margin: 0px;
-          padding-left: 18px; }
-    .resume > .name {
-      height: 60px; }
-    .resume > .about {
-      height: 100px; }
-      .resume > .about > .description span {
-        width: 100%; }
-    .resume > .skills {
-      height: 105px; }
-    .resume > .projects {
-      height: 550px; }
-    .resume > .experience {
-      height: 300px; }
-    .resume > .education {
-      height: 48px; }
-    .resume > .contact {
-      height: 90px; } }
+    height: 100%;
+    font-size: 12px; }
+  header, article, footer {
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; }
+    header > div, article > div, footer > div {
+      width: 100%;
+      height: 100%; }
+  article section > ul {
+    margin: 0px;
+    padding-left: 18px; }
+  header {
+    height: 60px; }
+  .about {
+    height: 100px; }
+    .about span {
+      width: 100%; }
+  .skills {
+    height: 105px; }
+  .projects {
+    height: 550px; }
+  .experience {
+    height: 300px; }
+  .education {
+    height: 48px; }
+  footer {
+    height: 90px; } }

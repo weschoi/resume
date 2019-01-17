@@ -1,3 +1,5 @@
+$gray: #a7a9ac;
+
 @mixin display($direction, $x, $y) {
     display: -webkit-flex; /* Safari */
     display: flex;
@@ -6,7 +8,16 @@
     justify-content: $y;
   }
 
-@mixin width_height($width, $height) {
+@mixin flex-display($direction, $x, $y, $width, $height) {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $x;
+    align-items: $y;
+    @include w_h($width, $height);
+}
+
+@mixin w_h($width, $height) {
     width: $width;
     height: $height;
 }

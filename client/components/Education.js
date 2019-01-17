@@ -4,22 +4,23 @@ export default class Education extends React.Component {
 
   render() {
     return (
-      <div className="section education">
+      <article className="education">
 
-        <div className="section-title">education</div>
+        <h1>education</h1>
 
-        <div className="description">
+        <div>
 
-          <div className="subsection">
+          <section>
             <span>2017&ensp;</span><a href="https://www.hackreactor.com/" style={{"textDecoration": "none", "color": "black"}}>hack reactor</a>&ensp;–&ensp;advanced software engineering immersion program
-          </div>
+          </section>
 
-          <div className="subsection">
+          <section>
             <span>2014&ensp;</span><a href="https://msu.edu/" style={{"textDecoration": "none", "color": "black"}}>michigan state university</a>&ensp;–&ensp;b.a. advertising
-          </div>
+          </section>
           
         </div>
-      </div>
+        
+      </article>
     )
   }
 }
